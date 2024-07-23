@@ -13,7 +13,7 @@ Feature: To-Do List Functionality
     Then the task "Buy groceries" should be marked as complete
 
   Scenario: Delete a task
-    Given the app is open
+    Given the app  is open
     And the task "Buy groceries" is in the list
     When I long-press the task "Buy groceries"
     And I tap the "Delete" button
