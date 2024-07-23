@@ -48,8 +48,8 @@ dependencies {
     androidTestImplementation ("com.android.support.test:runner:1.0.2")
 
 
-    androidTestImplementation ("androidx.test.espresso:espresso-core:3.6.1")
-    androidTestImplementation ("androidx.test.espresso:espresso-contrib:3.6.1") // For additional Espresso utilities
+
+    androidTestImplementation ("io.appium:java-client:8.3.0")
 
     androidTestImplementation ("androidx.test.ext:junit:1.2.1")
 
