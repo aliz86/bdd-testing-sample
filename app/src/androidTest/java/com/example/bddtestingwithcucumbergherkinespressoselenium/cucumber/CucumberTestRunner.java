@@ -1,4 +1,4 @@
-package com.example.bddtestingwithcucumbergherkinespressoselenium;
+package com.example.bddtestingwithcucumbergherkinespressoselenium.cucumber;
 
 import org.junit.runner.RunWith;
 
@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features",
-        glue = "com.example.bddtestingwithcucumbergherkinespressoselenium.steps"
+        features = "classpath:features",
+        glue = "com.example.bddtestingwithcucumbergherkinespressoselenium.cucumber.steps"
 )
 public class CucumberTestRunner {
 

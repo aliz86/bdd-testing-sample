@@ -7,6 +7,12 @@ android {
     namespace = "com.example.bddtestingwithcucumbergherkinespressoselenium"
     compileSdk = 34
 
+    sourceSets {
+        getByName("androidTest") {
+            assets.srcDirs(files("$projectDir/src/androidTest/resources"))
+        }
+    }
+
     defaultConfig {
         applicationId = "com.example.bddtestingwithcucumbergherkinespressoselenium"
         minSdk = 24
@@ -53,8 +59,9 @@ dependencies {
 
     androidTestImplementation ("androidx.test.ext:junit:1.2.1")
 
-    //androidTestImplementation ("io.cucumber:cucumber-android:7.12.0")
-    androidTestImplementation ("io.cucumber:cucumber-junit:7.12.0")
-    androidTestImplementation ("io.cucumber:cucumber-gherkin:7.12.0")
-    androidTestImplementation ("io.cucumber:cucumber-java:7.12.0")
+    androidTestImplementation ("io.cucumber:cucumber-android:7.14.0")
+    /* apparently no need to:
+    androidTestImplementation ("io.cucumber:cucumber-junit:7.14.0")
+    androidTestImplementation ("io.cucumber:cucumber-gherkin:7.14.0")
+    androidTestImplementation ("io.cucumber:cucumber-java:7.14.0")*/
 }
